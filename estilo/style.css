@@ -66,6 +66,7 @@ li:hover {
     transition: 0.8s;
 }
 
+/* Apresentação da empresa */
 div.sobre-empresa {
     max-width: 400px;
     height: 60%;
@@ -74,20 +75,21 @@ div.sobre-empresa {
     color: var(--cor-branca);
 }
 
-div.sobre-empresa > p {
-    font-size: 1.3rem;
-}
-
 div.sobre-empresa > h1 {
     position: relative;
     font-size: 2.5rem;
     padding-bottom: 0.8rem;
 }
 
+div.sobre-empresa > p {
+    font-size: 1.3rem;
+}
+
+/* Background vermelho do h1 */
 span.contraste {
+    position: absolute;
     top: 10%;
     left: 1%;
-    position: absolute;
     width: 80px;
     height: 80px;
     background-color: var(--cor-vermelho);
@@ -106,7 +108,6 @@ div.troca-de-background {
     width: 20px;
     height: 100%;
     background-color: #d3d3d3;
-    display: flex;
     margin-right: 10px;
 }
 
@@ -114,6 +115,7 @@ main {
     width: 100%;
 }
 
+/* Parte de Saiba Mais. */
 main > section.container {
     width: 100%;
     display: flex;
@@ -138,7 +140,6 @@ section#img-saiba-mais {
 
 div.icones {
     display: flex;
-    justify-content: flex-start;
     width: 60px;
     height: 60px;
     background-color: var(--cor-vermelho);
@@ -171,9 +172,10 @@ section.saiba-mais > p.p-saiba-mais {
     text-align: center;
     background-color: var(--cor-vermelho);
     cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* parte de onde a empresa atua */
 section.dados {
     width: 100%;
     margin-top: 40px;
@@ -227,6 +229,7 @@ div.dados-da-empresa > p {
     text-indent: 20px;
 }
 
+/* Sobre a empresa */
 section.sobre-nos {
     width: 100%;
     margin-top: 40px;
@@ -242,7 +245,7 @@ section.sobre-nos > div.detalhes-sobre-nos {
 }
 
 div#detalhe01 {
-    background-color: red;
+    background-color: var(--cor-vermelho);
 }
 
 div#detalhe01 > p.p-sobre-nos {
@@ -264,6 +267,7 @@ div#detalhe01 > h2 {
     height: 40px;
 }
 
+/* Detalhe do icone e parágrafo */
 div.area-detalhe {
     display: flex;
     flex-direction: row;
@@ -275,6 +279,7 @@ div.area-detalhe {
 .p-detalhes-sobre-nos {
     color: var(--cor-branca);
     margin-left: 20px;
+    padding: 0.5rem;
     margin-top: 5px;
 }
 
@@ -308,6 +313,7 @@ div.vantagens:nth-child(4) {
     border-top: 3px solid black;
 }
 
+/* quantidade de prêmios */
 div.vantagens > div.detalhe-icones {
     width: 60px;
     height: 60px;
@@ -330,6 +336,7 @@ div.vantagens > p.numero-de-integrantes {
     font-weight: bold;
 }
 
+/* depoimentos */
 section.depoimentos {
     width: 100%;
     max-height: 400px;
@@ -345,7 +352,7 @@ section.depoimentos {
 
 section.depoimentos > article.os-depoimentos {
     width: 45%;
-    max-height: 400px;
+    max-height: 450px;
     background-color: #fff;
     padding: 0.5rem;
     margin-left: 20px;
@@ -417,6 +424,7 @@ div.icone-palestra > img {
     height: 40px;
 }
 
+/* Integrantes da empresa */
 section.time {
     width: 100%;
     height: 400px;
@@ -486,6 +494,7 @@ p.nome {
     padding: 0.5rem;
 }
 
+/* form de contato */
 section.contato {
     width: 100%;
     max-height: 400px;
@@ -582,6 +591,7 @@ form > button {
     color: #fff;
 }
 
+/* Rodapé */
 footer {
     width: 100%;
     background-color: var(--cor-vermelho-escuro);

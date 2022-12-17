@@ -6,3 +6,122 @@
     Tela de Desktop: de 992px até 1200px
     Tela de Televisão: acima de 1200px
     */
+
+
+
+@media screen and (min-width:1200px) {
+    /* Area de navegação */
+    header > section.navegacao  {
+        font-size: 1.5rem;
+    }
+
+    /* Apresentação da empresa */
+    div.sobre-empresa {
+        max-width: 500px;
+    }
+
+    div.sobre-empresa > h1 {
+        font-size: 3rem;
+    }
+
+    div.sobre-empresa > p {
+        font-size: 1.8rem;
+    }
+    /* Background vermelho do h1 */
+    span.contraste {
+        top: 8%;
+    }
+
+    /* Parte de Saiba Mais. */
+    main > section.container > section.saiba-mais  {
+        font-size: 1.5rem;
+    }
+
+    section.saiba-mais > p.areas-de-atuacao {
+        font-size: 1.4rem;
+    }
+
+    section.saiba-mais > p.p-saiba-mais {
+        width: 40%;
+    }
+
+    /* parte de onde a empresa atua */
+    div.dados-da-empresa > h2 {
+        font-size: 1.6rem;
+    }
+
+    div.dados-da-empresa > p {
+        font-size: 1.1rem;
+    }
+
+    /* Sobre a empresa */
+    div#detalhe01 > p.p-sobre-nos {
+        font-size: 1.3rem;
+    }
+
+    /* Detalhe do icone e parágrafo */
+    .p-detalhes-sobre-nos {
+        font-size: 1.3rem;
+    }
+
+    strong {
+        font-weight: 900;
+    }
+
+    /* quantidade de prêmios */
+    p.sobre-integrantes {
+        font-size: 1.2rem;
+    }
+
+    /* depoimentos */
+    article.os-depoimentos > p.p-depoimentos {
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+
+    article.os-depoimentos > p.depoimentos-dos-clientes {
+        font-size: 1.3rem;
+        padding: 0.4rem;
+    }
+
+    article.os-depoimentos > p.p-clientes {
+        font-size: 1.1rem;
+        padding: 0.2rem;
+        font-weight: 600;
+    }
+
+    article.os-depoimentos > p.cargo-cliente {
+        font-size: 1.1rem;
+    }
+
+    /* Integrantes da empresa */
+    section.time > h1 {
+        font-size: 2rem;
+    }
+
+    p.nome {
+        font-size: 1.4rem;
+    }
+
+    p.cargo {
+        font-size: 1.3rem;
+    }
+
+    /* form de contato */
+    form > p.entre-em-contato {
+        font-size: 0.9rem;
+    }
+
+    /* Rodapé */
+    div.footer > p.p-empresa {
+        font-size: 1.2rem;
+    }
+
+    div.footer > p {
+        font-size: 1.1rem;
+    }
+
+    div.formas-de-contato > p {
+        font-size: 1.1rem;
+    }
+}    
