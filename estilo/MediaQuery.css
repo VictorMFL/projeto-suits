@@ -8,7 +8,7 @@
     */
 
 
-
+/* Tela de Televisão */
 @media screen and (min-width:1200px) {
     /* Area de navegação */
     header > section.navegacao  {
@@ -29,7 +29,7 @@
     }
     /* Background vermelho do h1 */
     span.contraste {
-        top: 8%;
+        top: 9%;
     }
 
     /* Parte de Saiba Mais. */
@@ -124,4 +124,10 @@
     div.formas-de-contato > p {
         font-size: 1.1rem;
     }
-}    
+}   
+
+
+/* Tela de Tablet: de 768px até 992px */
+@media screen and (min-width:768px) and (max-width:992px) {
+    
+}
