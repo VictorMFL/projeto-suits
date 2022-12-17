@@ -1,0 +1,663 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-vermelho: #c90000;
+    --cor-vermelho-escuro: #880000;
+    --cor-branca: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../imagens/prédio.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Area de navegação */
+header > section.navegacao {
+    display: flex;
+    width: 100%;
+}
+
+header > section > p {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--cor-branca);
+    font-weight: 600;
+    padding: 1rem;
+    background-color: #c90000;
+}
+
+header > section > nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header > section > nav > ul > li {
+    padding: 1rem 1.2rem;
+}
+
+header > section > nav > ul > li > a {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-weight: bold;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.493);
+    transition: 0.8s;
+}
+
+div.sobre-empresa {
+    max-width: 400px;
+    height: 60%;
+    padding: 1.4rem 1.7rem;
+    padding-bottom: 0px;
+    color: var(--cor-branca);
+}
+
+div.sobre-empresa > h1 {
+    position: relative;
+    font-size: 2.5rem;
+    padding-bottom: 0.8rem;
+}
+
+span.contraste {
+    top: 10%;
+    left: 1%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: var(--cor-vermelho);
+}
+
+div.background {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    width: 100%;
+    height: 6%;
+    background-color: transparent;
+}
+
+div.troca-de-background {
+    width: 20px;
+    height: 100%;
+    background-color: #d3d3d3;
+    display: flex;
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+}
+
+main > section.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main > section.container > section.saiba-mais {
+    width: 45%;
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 30px;
+    text-align: right;
+    font-weight: bold;
+}
+
+section#img-saiba-mais {
+    background-image: url(../imagens/harvey.png);
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+div.icones {
+    display: flex;
+    justify-content: flex-start;
+    width: 60px;
+    height: 60px;
+    background-color: var(--cor-vermelho);
+}
+
+div.icones > img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+}
+
+section.saiba-mais > p.areas-de-atuacao {
+    color: var(--cor-vermelho);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 2rem;
+    margin-top: 40px;
+}
+
+section.saiba-mais > p.p-saiba-mais {
+    width: 30%;
+    display: block;
+    float: right;
+    padding: 1.5rem;
+    margin-top: 20px;
+    color: var(--cor-branca);
+    text-align: center;
+    background-color: var(--cor-vermelho);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section.dados {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.dados > div.dados-da-empresa {
+    width: 30%;
+    height: 450px;
+    background-color: #ffdab9;
+    display: flex;
+    flex-direction: column;
+}
+
+section.img01 {
+    width: 100%;
+    height: 50%;
+    background-image: url(../imagens/BANCO.png);
+    background-size: cover;
+    background-position: center left;
+}
+
+section.img02 {
+    width: 100%;
+    height: 50%;
+    background-image: url(../imagens/construção.png);
+    background-size: cover;
+    background-position: center left;
+}
+
+section.img03 {
+    width: 100%;
+    height: 50%;
+    background-image: url(../imagens/empresa.png);
+    background-size: cover;
+    background-position: center left;
+}
+
+
+div.dados-da-empresa > h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+div.dados-da-empresa > p {
+    padding: 0.8rem;
+    text-indent: 20px;
+}
+
+section.sobre-nos {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sobre-nos > div.detalhes-sobre-nos {
+    width: 50%;
+    min-height: 400px;
+}
+
+div#detalhe01 {
+    background-color: red;
+}
+
+div#detalhe01 > p.p-sobre-nos {
+    color: var(--cor-branca);
+    padding: 3rem 1.5rem;
+    padding-bottom: 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+div#detalhe01 > h2 {
+    color: var(--cor-branca);
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.icones-sobre-nos > img {
+    width: 40px;
+    height: 40px;
+}
+
+div.area-detalhe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.p-detalhes-sobre-nos {
+    color: var(--cor-branca);
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+strong {
+    font-weight: 800;
+}
+
+div#detalhe02 {
+    display: grid;
+    grid-template-columns: auto auto ;
+    text-align: center;
+}
+
+div.vantagens:nth-child(1) {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+div.vantagens:nth-child(2) {
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+div.vantagens:nth-child(3) {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+div.vantagens:nth-child(4) {
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+}
+
+div.vantagens > div.detalhe-icones {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-vermelho);
+    margin: auto;
+    margin-top: 20px;
+}
+
+div.vantagens > div.detalhe-icones > img{
+    width: 40px;
+    height: 40px;
+}
+
+div.vantagens > p.numero-de-integrantes {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section.depoimentos {
+    width: 100%;
+    max-height: 400px;
+    margin-top: 40px;
+    padding: 1rem;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+}
+
+section.depoimentos > article.os-depoimentos {
+    width: 45%;
+    max-height: 400px;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin-left: 20px;
+}
+
+article.os-depoimentos > p.p-depoimentos {
+    font-size: 0.8rem;
+    color: var(--cor-vermelho);
+    font-weight: 600;
+    padding: 0.7rem;
+}
+
+article.os-depoimentos > p.depoimentos-dos-clientes {
+    padding: 0.6rem;
+    font-weight: bold;
+}
+
+article.os-depoimentos > p.p-clientes {
+    color: var(--cor-vermelho);
+    padding: 0.6rem;
+}
+
+article.os-depoimentos > p.cargo-cliente {
+    font-size: 0.8rem;
+}
+
+div.img-clientes {
+    width: 100%;
+    height: 70px;;
+}
+
+div.img-clientes > div.img-do-cliente {
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    float: right;
+}
+
+div.img-clientes > div#cliente-jhon {
+    background-image: url(../imagens/jhon.png);
+    background-size: cover;
+}
+
+div.img-clientes > div#cliente-paul {
+    background-image: url(../imagens/paul.png);
+    background-size: cover;
+}
+
+article#palestra {
+    width: 50%;
+    height: 200px;
+    background-image: url(../imagens/palestra.png);
+    background-size: cover;
+    padding: 0;
+    background-position: center center;
+}
+
+article#palestra > div.icone-palestra {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.icone-palestra > img {
+    width: 40px;
+    height: 40px;
+}
+
+section.time {
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    padding: 1rem;
+    text-align: center;
+}
+
+section.time > h1 > span {
+    color: var(--cor-vermelho);
+}
+
+section.time > h1 {
+    padding: 1rem;
+}
+
+section.time > div.img-do-time {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.img-do-time > div.img-time {
+    width: 30%;
+    height: 300px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.img-time > div.img-mike {
+    width: 100%;
+    height: 80%;
+    background-image: url(../imagens/mike.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+div.img-time > div.img-louis {
+    width: 100%;
+    height: 80%;
+    background-image: url(../imagens/louis.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+div.img-time > div.img-harvey {
+    width: 100%;
+    height: 80%;
+    background-image: url(../imagens/harvey02.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+div.img-time > div.img-jessica {
+    width: 100%;
+    height: 80%;
+    background-image: url(../imagens/jesica.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+p.nome {
+    color: var(--cor-vermelho);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+section.contato {
+    width: 100%;
+    max-height: 400px;
+    margin-top: 40px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-vermelho);
+    padding: 2rem;
+}
+
+section.contato > div.fale-conosco:nth-child(1) {
+    width: 40%;
+    height: 300px;
+}
+
+section.contato > div.fale-conosco:nth-child(2) {
+    width: 60%;
+    height: 400px;
+    margin-left: 20px;
+}
+
+div.fale-conosco > div.img-equipe {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/suits.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+div.icone-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+}
+
+div.icone-email > img {
+    width: 40px;
+    height: 40px;
+}
+
+form {
+    text-align: left;
+}
+
+form > p.entre-em-contato {
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #ffff;
+}
+
+form > .input-nome {
+    padding: 0.8rem;
+    font-size: 1rem;
+    display: inline-block;
+    width: 45%;
+}
+
+form > .input-email {
+    padding: 0.8rem;
+    font-size: 1rem;
+    display: inline-block;
+    width: 45%;
+    margin-left: 10px;
+}
+
+form > .input-telefone {
+    padding: 0.8rem;
+    font-size: 1rem;
+    display: inline-block;
+    width: 80%;
+    margin-top: 15px;
+}
+
+form > textarea {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 0.6rem;
+    display: block;
+}
+
+form > button {
+    padding: 0.8rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 1rem;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: var(--cor-vermelho-escuro);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer > div.footer {
+    width: 25%;
+    height: 100%;
+    padding: 0.5rem;
+    margin-right: 15px;
+    color: #fff;
+}
+
+div.footer > p.p-empresa {
+    padding: 0.6rem;
+    background-color: var(--cor-vermelho);
+    font-weight: bold;
+}
+
+div.formas-de-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+div.formas-de-contato > img {
+    width: 40px;
+    height: 40px;
+}
+
+div.formas-de-contato > p {
+    margin-left: 8px;
+}
+
+div.footer > p {
+    margin-top: 15px;
+}
+
+div.footer > div.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.redes-sociais > a > img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+} 
+
+div#outros-servicos > p {
+    padding: 0.6rem;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+div#paginas > p {
+    padding: 0.6rem;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+div.numero-de-consulta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    margin-top: 20px;
+}
+
+div.numero-de-consulta > img {
+    width: 40px;
+    height: 40px;
+}
+
+div.numero-de-consulta > p {
+    margin-left: 8px;
+}
+
+div#consulta-gratis > p.consulta {
+    color: #d3d3d3;
+}
