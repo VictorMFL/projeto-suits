@@ -369,19 +369,52 @@
 /* Telas Pequenas: até 600px */
 @media screen and (max-width:600px) {
     /* Area de navegação */
-    ul, li, a{
+    ul.lista {
         display: none;
+    }
+
+    div.nome-empresa {
+        width: 100%;
+        display: flex;
+        justify-content: start;
     }
 
     div.menu {
         position: absolute;
+        right: 0;
+        top: 1px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 40%;
-        height: 400px;
-        background-color: green;
+        min-width: 100px;
+        min-height: 200px;
+        background-color: #d3d3d3;
+        display: none;
+    }
+
+    div.menu > ul {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    
+    div.menu > ul > li {
+        padding: 15px;
+    }
+    
+    div.menu > ul > li > a {
+        text-decoration: none;
+        color: var(--cor-branca);
+        font-weight: bold;
+    }
+    
+    li:hover {
+        background-color: #ffffff7e;
+        transition: 0.8s;
     }
 
     nav {
@@ -392,16 +425,17 @@
         height: 50px;
     }
 
-    header > section > nav > img {
+    header > section > nav > img#menu-hamburguer {
         display: block;
+        cursor: pointer;
         width: 30px;
         height: 30px;
     }
 
     /* Apresentação da empresa */
     div.sobre-empresa {
-        max-width: 350px;
-        padding: 1.3rem;
+        max-width: 250px;
+        padding: 1.1rem;
     }
 
     div.sobre-empresa > h1 {

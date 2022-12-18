@@ -49,6 +49,10 @@ header > section > nav > img {
     display: none;
 }
 
+div.menu > ul {
+    display: none;
+}
+
 header > section > nav > ul {
     display: flex;
     flex-direction: row;
