@@ -45,6 +45,10 @@ header > section > div > p {
     background-color: #c90000;
 }
 
+header > section > nav > img {
+    display: none;
+}
+
 header > section > nav > ul {
     display: flex;
     flex-direction: row;
@@ -62,7 +66,7 @@ header > section > nav > ul > li > a {
 }
 
 li:hover {
-    background-color: rgba(255, 255, 255, 0.493);
+    background-color: #ffffff7e;
     transition: 0.8s;
 }
 

@@ -258,6 +258,7 @@
     section.contato > div.fale-conosco:nth-child(1) {
         display: none;
     }
+
     /* Rodapé */
     footer {
         display: flex;
@@ -367,5 +368,312 @@
 
 /* Telas Pequenas: até 600px */
 @media screen and (max-width:600px) {
+    /* Area de navegação */
+    ul,
+    li {
+        background-color: #d3d3d3;
+        flex-direction: column;
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    header > section > nav > img {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Apresentação da empresa */
+    div.sobre-empresa {
+        max-width: 350px;
+        padding: 1.3rem;
+    }
+
+    div.sobre-empresa > h1 {
+        font-size: 2rem;
+        padding-bottom: 0.8rem;
+    }
+
+    div.sobre-empresa > p {
+        font-size: 1rem;
+    }
+
+    div.background {
+        display: none;
+    }
+
+    /* Parte de Saiba Mais. */
+    main > section.container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main > section.container > section.saiba-mais {
+        max-height: 250px;
+    }
+
+    section#img-saiba-mais {
+        width: 50%;
+    }
+
+    div.icones {
+        width: 50px;
+        height: 50px;
+    }
+
+    div.icones > img {
+        width: 30px;
+        height: 30px;
+    }
+
+    section.saiba-mais > p.areas-de-atuacao {
+        font-size: 0.6rem;
+        padding: 1rem;
+    }
+
+    section.saiba-mais > p {
+        font-size: 0.6rem;
+    }
+
+    section.saiba-mais > p.p-saiba-mais {
+        width: 60%;
+        padding: 1rem;
+        font-size: 0.6rem;
+    }
+
+
+    /* parte de onde a empresa atua */
+    section.dados {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    section.dados > div.dados-da-empresa {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
     
+    section.img02 {
+        background-position: top bottom;
+    }
+
+    div.dados-da-empresa > h2 {
+        font-size: 1.1rem;
+    }
+
+    div.dados-da-empresa > p {
+        font-size: 0.9rem;
+    }
+
+    /* Sobre a empresa */
+    div#detalhe01 {
+        display: none;
+    }
+
+    div#detalhe02 {
+        width: 100%;
+    }
+
+    /* depoimentos */
+    section.depoimentos {
+        width: 100%;
+        max-height: 450px;
+        margin-top: 40px;
+        padding: 1rem;
+    }
+
+    section.depoimentos > article.os-depoimentos {
+        width: 100%;
+        max-height: 450px;
+        padding: 0.5rem;
+        margin-left: 20px;
+    }
+
+    article#palestra {
+        display: none;
+    }
+
+    /* Integrantes da empresa */
+    section.time {
+        width: 100%;
+        max-height: 400px;
+        margin-top: 40px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    section.time > h1 > span {
+        color: var(--cor-vermelho);
+    }
+
+    section.time > h1 {
+        padding: 0.5rem;
+        font-size: 1rem;
+        padding-top: 0;
+    }
+
+    section.time > div.img-do-time {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    div.img-do-time > div.img-time {
+        width: 30%;
+        max-height: 250px;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    p.nome {
+        color: var(--cor-vermelho);
+        font-weight: bold;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    p.cargo {
+        font-size: 0.6rem;
+    }
+
+    /* Formulário de contato */
+    div.fale-conosco > div.img-equipe {
+        display: none;
+    }
+    section.contato > div.fale-conosco:nth-child(1) {
+        display: none;
+    }
+
+    textarea {
+        max-width: 90%;
+    }
+
+    section.contato > div.fale-conosco:nth-child(2) {
+        width: 100%;
+        height: 400px;
+    }
+
+    /* Rodapé */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    footer > div.footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    div.footer > p.p-empresa {
+        display: none;
+    }
+
+    div.formas-de-contato {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    div.formas-de-contato > p {
+        font-size: 0.6rem;
+    }
+
+    div.formas-de-contato > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    p.chamada {
+        display: none;
+    }
+
+    div.footer > p {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    div.footer > div.redes-sociais {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    p.p-siga-nos {
+        display: none;
+    }
+
+    div.redes-sociais > a > img {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        display: none;
+    } 
+
+    div#outros-servicos {
+        border-bottom: 2px solid #d3d3d3;
+    }
+
+    div#outros-servicos > p {
+        padding: 0.5rem;
+        font-size: 0.6rem;
+        border: none;
+    }
+
+    div#paginas {
+        border-bottom: 2px solid #d3d3d3;
+    }
+
+    div#paginas > p {
+        padding: 0.5rem;
+        font-size: 0.6rem;
+        border: none;
+    }
+
+    div.numero-de-consulta {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #fff;
+        margin-left: 20px;
+        font-size: 0.6rem;
+        padding: 0.5rem;
+    }
+
+    div.numero-de-consulta > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    div.numero-de-consulta > p {
+        margin-left: 5px;
+    }
+
+    div#consulta-gratis > p.consulta {
+        margin-left: 20px;
+        font-size: 0.6rem;
+        color: #d3d3d3;
+    }
+
+    p.p-consulta-gratis {
+        padding-left: 10px;
+        font-size: 0.5rem;
+    }
 }
