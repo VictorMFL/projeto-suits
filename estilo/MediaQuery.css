@@ -369,11 +369,19 @@
 /* Telas Pequenas: até 600px */
 @media screen and (max-width:600px) {
     /* Area de navegação */
-    ul,
-    li {
-        background-color: #d3d3d3;
-        flex-direction: column;
+    ul, li, a{
         display: none;
+    }
+
+    div.menu {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+        height: 400px;
+        background-color: green;
     }
 
     nav {
@@ -397,7 +405,7 @@
     }
 
     div.sobre-empresa > h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-bottom: 0.8rem;
     }
 
