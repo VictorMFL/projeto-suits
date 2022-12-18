@@ -373,6 +373,7 @@ article.os-depoimentos > p.depoimentos-dos-clientes {
 article.os-depoimentos > p.p-clientes {
     color: var(--cor-vermelho);
     padding: 0.6rem;
+    font-weight: 600;
 }
 
 article.os-depoimentos > p.cargo-cliente {
@@ -494,7 +495,7 @@ p.nome {
     padding: 0.5rem;
 }
 
-/* form de contato */
+/* Formulário de contato */
 section.contato {
     width: 100%;
     max-height: 400px;
@@ -625,10 +626,6 @@ div.formas-de-contato {
 div.formas-de-contato > img {
     width: 40px;
     height: 40px;
-}
-
-div.formas-de-contato > p {
-    margin-left: 8px;
 }
 
 div.footer > p {
