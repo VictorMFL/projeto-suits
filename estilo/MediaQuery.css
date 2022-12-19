@@ -390,7 +390,41 @@
         min-width: 100px;
         min-height: 200px;
         background-color: #d3d3d3;
+        opacity: 0.9;
         display: none;
+    }
+
+    header > section > nav > img#menu-hamburguer {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+
+    img#menu-hamburguer:active {
+        background-color: #d3d3d3;
+    }
+
+    div.menu > div.icone-fechar {
+        position: absolute;
+        left: -40px;
+        width: 40px;
+        height: 40px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        opacity: 0.9;
+    }
+
+    div.icone-fechar > img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    div.icone-fechar > img:active {
+        background-color: #d3d3d3;
     }
 
     div.menu > ul {
@@ -404,11 +438,14 @@
     
     div.menu > ul > li {
         padding: 15px;
+        width: 100%;
+        text-align: center;
     }
     
     div.menu > ul > li > a {
         text-decoration: none;
-        color: var(--cor-branca);
+        color: #000000;
+        opacity: 0.6;
         font-weight: bold;
     }
     
@@ -425,17 +462,17 @@
         height: 50px;
     }
 
-    header > section > nav > img#menu-hamburguer {
-        display: block;
-        cursor: pointer;
-        width: 30px;
-        height: 30px;
-    }
 
     /* Apresentação da empresa */
     div.sobre-empresa {
         max-width: 250px;
         padding: 1.1rem;
+    }
+
+    /* Background vermelho do h1 */
+    span.contraste {
+        width: 70px;
+        height: 70px;
     }
 
     div.sobre-empresa > h1 {

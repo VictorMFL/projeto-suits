@@ -53,6 +53,10 @@ div.menu > ul {
     display: none;
 }
 
+div.icone-fechar > img {
+    display: none;
+}
+
 header > section > nav > ul {
     display: flex;
     flex-direction: row;
