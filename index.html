@@ -1,266 +1,383 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Suits</title>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
-    <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="estilo/MediaQuery.css">
-    
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link rel="stylesheet" href="estilo/style.css" />
+    <link rel="stylesheet" href="estilo/MediaQuery.css" />
+  </head>
+  <body>
     <header>
-        <section class="navegacao">
-            <div class="nome-empresa"> 
-                <p>Pearson Specter Leet</p>
+      <section class="navegacao">
+        <div class="nome-empresa">
+          <p>Pearson Specter Leet</p>
+        </div>
+        <nav>
+          <img
+            src="icones/icone-menu.svg"
+            alt="icone-menu"
+            id="menu-hamburguer"
+            onclick="abrirMenu()"
+          />
+
+          <div class="menu">
+            <div class="icone-fechar">
+              <img
+                src="icones/icone-fechar.svg"
+                alt="icone-fechar"
+                onclick="fecharMenu()"
+                id="fechar-menu"
+              />
             </div>
-            <nav>
-                <img src="icones/icone-menu.svg" alt="icone-menu" id="menu-hamburguer" onclick="abrirMenu()">
-                
-                <div class="menu">
-                    <div class="icone-fechar">
-                        <img src="icones/icone-fechar.svg" alt="icone-fechar" onclick="fecharMenu()" id="fechar-menu">
-                    </div>
-                    <ul class="ul-menu">
-                        <li><a href="#inicio">INÍCIO</a></li>
-                        <li><a href="#servicos">SERVIÇOS</a></li>
-                        <li><a href="#detalhe02">SOBRE</a></li>
-                        <li><a href="#equipe">TIME</a></li>
-                        <li><a href="#forma-de-contato">CONTATO</a></li>
-                    </ul>
-                </div>
+            <ul class="ul-menu">
+              <li><a href="#inicio">INÍCIO</a></li>
+              <li><a href="#servicos">SERVIÇOS</a></li>
+              <li><a href="#detalhe02">SOBRE</a></li>
+              <li><a href="#equipe">TIME</a></li>
+              <li><a href="#forma-de-contato">CONTATO</a></li>
+            </ul>
+          </div>
 
-                <ul class="lista">
-                    <li><a href="#inicio">INÍCIO</a></li>
-                    <li><a href="#servicos">SERVIÇOS</a></li>
-                    <li><a href="#detalhe01">SOBRE</a></li>
-                    <li><a href="#equipe">TIME</a></li>
-                    <li><a href="#forma-de-contato">CONTATO</a></li>
-                </ul>
-            </nav>
-        </section>
+          <ul class="lista">
+            <li><a href="#inicio">INÍCIO</a></li>
+            <li><a href="#servicos">SERVIÇOS</a></li>
+            <li><a href="#detalhe01">SOBRE</a></li>
+            <li><a href="#equipe">TIME</a></li>
+            <li><a href="#forma-de-contato">CONTATO</a></li>
+          </ul>
+        </nav>
+      </section>
 
-        <div class="sobre-empresa">
-            <span class="contraste"></span>
-            <h1>Melhores experts em direito do país</h1>
+      <div class="sobre-empresa">
+        <h1>Melhores experts em direito do país</h1>
 
-            <p>Os advogados mais bem qualificados estão aqui agende uma reinião e conheça nosso time</p>
-        </div>
-        <div class="background">
-            <div class="troca-de-background"></div>
-            <div class="troca-de-background"></div>
-            <div class="troca-de-background"></div>
-        </div>
+        <p>
+          Os advogados mais bem qualificados estão aqui agende uma reinião e
+          conheça nosso time
+        </p>
+      </div>
+      <div class="background">
+        <div class="troca-de-background"></div>
+        <div class="troca-de-background"></div>
+        <div class="troca-de-background"></div>
+      </div>
     </header>
-    
+
     <main>
-        <section class="container">
-            <section class="saiba-mais" id="inicio">
-                <p class="areas-de-atuacao">AREAS DE ATUAÇÃO</p>
-                <p>Nossos especialisas podem ajudar <br> você em
-                Direito Civil, Ambiental, Empresarial.</p>
-                <p class="p-saiba-mais">SAIBA MAIS</p>
-            </section>
-            <section class="saiba-mais" id="img-saiba-mais">
-               <div class="icones">
-                    <img src="icones/icone-pessoa.svg" alt="icone-pessoa">
-               </div>
-            </section>
+      <section class="container">
+        <section class="saiba-mais" id="inicio">
+          <p class="areas-de-atuacao">AREAS DE ATUAÇÃO</p>
+          <p>
+            Nossos especialisas podem ajudar <br />
+            você em Direito Civil, Ambiental, Empresarial.
+          </p>
+          <p class="p-saiba-mais">SAIBA MAIS</p>
         </section>
-
-        <section class="dados">
-            <div class="dados-da-empresa" id="servicos">
-                <section class="img01"></section>
-                <h2>BANCOS E FINANÇAS PESSOIAS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, expedita deleniti laborum mollitia nihil, reiciendis eaque ipsum velit unde quo libero, necessitatibus inventore tenetur sit possimus? Vitae, illo corporis. Corrupti.</p>
-            </div>
-            <div class="dados-da-empresa">
-                <section class="img02"></section>
-                <h2>CONSTRUÇÃO DE IMÓVEIS SEM ESCRITURA</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur  adipisicing elit. Architecto, nostrum eligendi quia sapiente doloribus veritatis. Quo, quibusdam, exercitationem similique eum consequatur odit saepe odio ex reiciendis delectus libero reprehenderit facere?</p>
-            </div>
-            <div class="dados-da-empresa">
-                <section class="img03"></section>
-                <h2>EMPRESA E FUNCIONÁRIOS</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam beatae nisi atque expedita voluptas adipisci et velit id laudantium nostrum ipsam, perspiciatis iste, minus, corrupti omnis odit. Unde, similique enim.</p>
-            </div>
+        <section class="saiba-mais" id="img-saiba-mais">
+          <div class="icones">
+            <img src="icones/icone-pessoa.svg" alt="icone-pessoa" />
+          </div>
         </section>
+      </section>
 
-        <section class="sobre-nos">
-            <div class="detalhes-sobre-nos" id="detalhe01">
-                <p class="p-sobre-nos">SOBRE NÓS</p>
-                <h2>Uma empresa que tem foco no cliente, aconselhando da melhor forma e consguindo os melhores resultados</h2>
-                <div class="area-detalhe">
-                    <div class="icones-sobre-nos">
-                        <img src="icones/icone-maleta.svg" alt="icone-maleta">
-                    </div>
-                    <p class="p-detalhes-sobre-nos"><strong>Advogados atualizados</strong> <br> <br> Nós promovemos treinamentos mensais a todos os nossos colaboradores</p>
-                </div>
-                <div class="area-detalhe">
-                    <div class="icones-sobre-nos">
-                        <img src="icones/icone-livro.svg" alt="icone-livro">
-                    </div>
-                    <p class="p-detalhes-sobre-nos"><strong>Domínio das leis</strong> <br> <br> Nossos colaboradores são especializados em várias áreas do Direito, dominando as principais leis em suas especialidades</p>
-                </div>
-            </div>
-            <div class="detalhes-sobre-nos" id="detalhe02">
-                <div class="vantagens">
-                    <div class="detalhe-icones"><img src="icones/icone-pessoa.svg" alt="icone-pessoa" id="img-icone01"></div>
-                    <p class="numero-de-integrantes">50</p>
-                    <p class="sobre-integrantes">ADVOGADOS</p>
-                </div>
-                <div class="vantagens">
-                    <div  class="detalhe-icones"><img src="icones/icone-verificar.svg" alt="icone-verificar" id="img-icone02"></div>
-                    <p class="numero-de-integrantes">789</p>
-                    <p class="sobre-integrantes">CASOS <br> RESOLVIDOS</p>
-                </div>
-                <div class="vantagens">
-                    <div class="detalhe-icones"><img src="icones/icone-clientes.svg" alt="icone-clientes" id="img-icone03"></div>
-                    <p class="numero-de-integrantes">40</p>
-                    <p class="sobre-integrantes">CLIENTES</p>
-                </div>
-                <div class="vantagens">
-                    <div class="detalhe-icones"><img src="icones/icone-estrela.svg" alt="icone-estrela" id="img-icone04"></div>
-                    <p class="numero-de-integrantes">7</p>
-                    <p class="sobre-integrantes">PRÊMIOS <br> EMPRESARIAIS</p>
-                </div>
-            </div>
-        </section>
+      <section class="dados">
+        <div class="dados-da-empresa" id="servicos">
+          <section class="img01"></section>
+          <h2>BANCOS E FINANÇAS PESSOIAS</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+            expedita deleniti laborum mollitia nihil, reiciendis eaque ipsum
+            velit unde quo libero, necessitatibus inventore tenetur sit
+            possimus? Vitae, illo corporis. Corrupti.
+          </p>
+        </div>
+        <div class="dados-da-empresa">
+          <section class="img02"></section>
+          <h2>CONSTRUÇÃO DE IMÓVEIS SEM ESCRITURA</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Architecto, nostrum eligendi quia sapiente doloribus veritatis. Quo,
+            quibusdam, exercitationem similique eum consequatur odit saepe odio
+            ex reiciendis delectus libero reprehenderit facere?
+          </p>
+        </div>
+        <div class="dados-da-empresa">
+          <section class="img03"></section>
+          <h2>EMPRESA E FUNCIONÁRIOS</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+            beatae nisi atque expedita voluptas adipisci et velit id laudantium
+            nostrum ipsam, perspiciatis iste, minus, corrupti omnis odit. Unde,
+            similique enim.
+          </p>
+        </div>
+      </section>
 
-        <section class="depoimentos">
-            <article class="os-depoimentos">
-                <p class="p-depoimentos">DEPOIMENTOS DE CLIENTES</p>
-                <p class="depoimentos-dos-clientes">A Peason Specter Leet resolveu meu caso muito rápido, recomendo a todos.</p>
-                <p class="p-clientes">JHON DOE</p>
-                <p class="cargo-cliente">CEO da Emprea X</p>
-                <div class="img-clientes">
-                    <div class="img-do-cliente" id="cliente-jhon"></div>
-                </div>
-                <p class="depoimentos-dos-clientes">O melhor escritório que eu já encontrei, coneguimos resolver umcaso que durava décadas.</p>
-                <p class="p-clientes">PAUL CLINTON</p>
-                <p class="cargo-cliente">Gerente de Projetos</p>
-                <div class="img-clientes">
-                    <div class="img-do-cliente" id="cliente-paul"></div>
-                </div>
-            </article>
-            <article class="os-depoimentos" id="palestra">
-               <div class="icone-palestra">
-                <img src="icones/icone-lapis.svg" alt="icone-lapis">
-               </div>
-            </article>
-        </section>
-
-        <section class="time" id="equipe">
-            <h1>A <span> Pearson Specter Leet</span> tem um time de especialistas a sua disposição
-            </h1>
-            <div class="img-do-time">
-                <div class="img-time" id="img-mike">
-                    <div class="img-mike"></div>
-                    <div class="cargo-mike">
-                        <p class="nome">Mike Ross</p>
-                        <p class="cargo">Advogado</p>
-                    </div>
-                </div>
-                <div class="img-time">
-                    <div class="img-louis"></div>
-                    <div class="cargo-louis">
-                        <p class="nome">Louis Leet</p>
-                        <p class="cargo">Advogado Sênior</p>
-                    </div>
-                </div>
-                <div class="img-time">
-                    <div class="img-harvey"></div>
-                    <div class="cargo-harvey">
-                        <p class="nome">Harvey Specter</p>
-                        <p class="cargo">Advogado Sênior</p>
-                    </div>
-                </div>
-                <div class="img-time">
-                    <div class="img-jessica"></div>
-                    <div class="cargo-jessica">
-                        <p class="nome">Jessica Pearson</p>
-                        <p class="cargo">CEO</p>
-                    </div>
-                </div>
+      <section class="sobre-nos">
+        <div class="detalhes-sobre-nos" id="detalhe01">
+          <p class="p-sobre-nos">SOBRE NÓS</p>
+          <h2>
+            Uma empresa que tem foco no cliente, aconselhando da melhor forma e
+            consguindo os melhores resultados
+          </h2>
+          <div class="area-detalhe">
+            <div class="icones-sobre-nos">
+              <img src="icones/icone-maleta.svg" alt="icone-maleta" />
             </div>
-        </section>
-
-        <section class="contato" id="forma-de-contato">
-            <div class="fale-conosco">
-                <div class="img-equipe"></div>
+            <p class="p-detalhes-sobre-nos">
+              <strong>Advogados atualizados</strong> <br />
+              <br />
+              Nós promovemos treinamentos mensais a todos os nossos
+              colaboradores
+            </p>
+          </div>
+          <div class="area-detalhe">
+            <div class="icones-sobre-nos">
+              <img src="icones/icone-livro.svg" alt="icone-livro" />
             </div>
-            <div class="fale-conosco">
-                <div class="icone-email">
-                    <img src="icones/icone-email.svg" alt="icone-email">
-                </div>
-                <form action="" method="POST">
-                    <p class="entre-em-contato">ENTRE EM CONTATO</p>
-                    <input type="text" name="nome" id="inome" placeholder="NOME" class="input-nome">
-                    <input type="email" name="email" id="iemail"
-                    placeholder="EMAIL" class="input-email">
-                    <input type="text" name="telefone" id="itelefone"
-                    placeholder="TELEFONE" class="input-telefone">
-
-                    <textarea name="mensagem" id="imensagem" cols="45" rows="5"
-                    placeholder="SUA MENSAGEM..."></textarea>
-                    <button>ENVIAR</button>
-                </form>
+            <p class="p-detalhes-sobre-nos">
+              <strong>Domínio das leis</strong> <br />
+              <br />
+              Nossos colaboradores são especializados em várias áreas do
+              Direito, dominando as principais leis em suas especialidades
+            </p>
+          </div>
+        </div>
+        <div class="detalhes-sobre-nos" id="detalhe02">
+          <div class="vantagens">
+            <div class="detalhe-icones">
+              <img
+                src="icones/icone-pessoa.svg"
+                alt="icone-pessoa"
+                id="img-icone01"
+              />
             </div>
-        </section>
+            <p class="numero-de-integrantes">50</p>
+            <p class="sobre-integrantes">ADVOGADOS</p>
+          </div>
+          <div class="vantagens">
+            <div class="detalhe-icones">
+              <img
+                src="icones/icone-verificar.svg"
+                alt="icone-verificar"
+                id="img-icone02"
+              />
+            </div>
+            <p class="numero-de-integrantes">789</p>
+            <p class="sobre-integrantes">
+              CASOS <br />
+              RESOLVIDOS
+            </p>
+          </div>
+          <div class="vantagens">
+            <div class="detalhe-icones">
+              <img
+                src="icones/icone-clientes.svg"
+                alt="icone-clientes"
+                id="img-icone03"
+              />
+            </div>
+            <p class="numero-de-integrantes">40</p>
+            <p class="sobre-integrantes">CLIENTES</p>
+          </div>
+          <div class="vantagens">
+            <div class="detalhe-icones">
+              <img
+                src="icones/icone-estrela.svg"
+                alt="icone-estrela"
+                id="img-icone04"
+              />
+            </div>
+            <p class="numero-de-integrantes">7</p>
+            <p class="sobre-integrantes">
+              PRÊMIOS <br />
+              EMPRESARIAIS
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="depoimentos">
+        <article class="os-depoimentos">
+          <p class="p-depoimentos">DEPOIMENTOS DE CLIENTES</p>
+          <p class="depoimentos-dos-clientes">
+            A Peason Specter Leet resolveu meu caso muito rápido, recomendo a
+            todos.
+          </p>
+          <p class="p-clientes">JHON DOE</p>
+          <p class="cargo-cliente">CEO da Emprea X</p>
+          <div class="img-clientes">
+            <div class="img-do-cliente" id="cliente-jhon"></div>
+          </div>
+          <p class="depoimentos-dos-clientes">
+            O melhor escritório que eu já encontrei, coneguimos resolver umcaso
+            que durava décadas.
+          </p>
+          <p class="p-clientes">PAUL CLINTON</p>
+          <p class="cargo-cliente">Gerente de Projetos</p>
+          <div class="img-clientes">
+            <div class="img-do-cliente" id="cliente-paul"></div>
+          </div>
+        </article>
+        <article class="os-depoimentos" id="palestra">
+          <div class="icone-palestra">
+            <img src="icones/icone-lapis.svg" alt="icone-lapis" />
+          </div>
+        </article>
+      </section>
+
+      <section class="time" id="equipe">
+        <h1>
+          A <span> Pearson Specter Leet</span> tem um time de especialistas a
+          sua disposição
+        </h1>
+        <div class="img-do-time">
+          <div class="img-time" id="img-mike">
+            <div class="img-mike"></div>
+            <div class="cargo-mike">
+              <p class="nome">Mike Ross</p>
+              <p class="cargo">Advogado</p>
+            </div>
+          </div>
+          <div class="img-time">
+            <div class="img-louis"></div>
+            <div class="cargo-louis">
+              <p class="nome">Louis Leet</p>
+              <p class="cargo">Advogado Sênior</p>
+            </div>
+          </div>
+          <div class="img-time">
+            <div class="img-harvey"></div>
+            <div class="cargo-harvey">
+              <p class="nome">Harvey Specter</p>
+              <p class="cargo">Advogado Sênior</p>
+            </div>
+          </div>
+          <div class="img-time">
+            <div class="img-jessica"></div>
+            <div class="cargo-jessica">
+              <p class="nome">Jessica Pearson</p>
+              <p class="cargo">CEO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contato" id="forma-de-contato">
+        <div class="fale-conosco">
+          <div class="img-equipe"></div>
+        </div>
+        <div class="fale-conosco">
+          <div class="icone-email">
+            <img src="icones/icone-email.svg" alt="icone-email" />
+          </div>
+          <form action="" method="POST">
+            <p class="entre-em-contato">ENTRE EM CONTATO</p>
+            <input
+              type="text"
+              name="nome"
+              id="inome"
+              placeholder="NOME"
+              class="input-nome"
+            />
+            <input
+              type="email"
+              name="email"
+              id="iemail"
+              placeholder="EMAIL"
+              class="input-email"
+            />
+            <input
+              type="text"
+              name="telefone"
+              id="itelefone"
+              placeholder="TELEFONE"
+              class="input-telefone"
+            />
+
+            <textarea
+              name="mensagem"
+              id="imensagem"
+              cols="45"
+              rows="5"
+              placeholder="SUA MENSAGEM..."
+            ></textarea>
+            <button>ENVIAR</button>
+          </form>
+        </div>
+      </section>
     </main>
-    
+
     <footer>
-        <div class="footer">
-            <p class="p-empresa">Pearson specter Leet</p>
-            <p class="chamada">Pearson specter Leet Os advogados certos para a sua empresa</p>
-            <div class="formas-de-contato">
-                <img src="icones/icone-localização.svg" alt="icone-localização">
-                <p>Rua dos Advogados, 14150909</p>
-            </div>
-            <div class="formas-de-contato">
-                <img src="icones/icone-telefone.svg" alt="icone-telefone">
-                <p>(99) 9999-9999</p>
-            </div>
-            <div class="formas-de-contato">
-                <img src="icones/icone-email.svg" alt="icone-email">
-                <p>contato@pearsonspecter.com</p>
-            </div>
-            <p class="p-siga-nos">Siga-nos:</p>
-            <div class="redes-sociais">
-                <a href="#"><img src="icones/icone-facebook.svg" alt="icone-facebook"></a>
-                <a href="https://twitter.com/Victorfreitas45" target="_blank"><img src="icones/icone-twitter.svg" alt="icone-twitter"></a>
-                <a href="https://www.linkedin.com/in/victor-manoel-de-freitas-laurentino-ba81ab22a/" target="_blank"><img src="icones/icone-linkedin.svg" alt="icone-linkedin"></a>
-                <a href="https://instagram.com/victor_freitas02" target="_blank"><img src="icones/icone-instagram.svg" alt="icone-instagram"></a>
-            </div>
+      <div class="footer">
+        <p class="p-empresa">Pearson specter Leet</p>
+        <p class="chamada">
+          Pearson specter Leet Os advogados certos para a sua empresa
+        </p>
+        <div class="formas-de-contato">
+          <img src="icones/icone-localização.svg" alt="icone-localização" />
+          <p>Rua dos Advogados, 14150909</p>
         </div>
-        <div class="footer" id="outros-servicos">
-            <p>OUTROS SERVIÇOS</p>
-            <p>Propriedade intlectual</p>
-            <p>LGPD</p>
-            <p>Direito internacional</p>
-            <p>Processos</p>
+        <div class="formas-de-contato">
+          <img src="icones/icone-telefone.svg" alt="icone-telefone" />
+          <p>(99) 9999-9999</p>
         </div>
-        <div class="footer" id="paginas">
-            <p>PÁGINAS</p>
-            <p>Termos e condições</p>
-            <p>Política de privacidade</p>
-            <p>Fale com um especialista</p>
-            <p>PAQ</p>
+        <div class="formas-de-contato">
+          <img src="icones/icone-email.svg" alt="icone-email" />
+          <p>contato@pearsonspecter.com</p>
         </div>
-        <div class="footer" id="consulta-gratis">
-            <p class="p-consulta-gratis">CONSULTA GRÁTIS</p>
-            <div class="numero-de-consulta">
-                <img src="icones/icone-telefone.svg" alt="icone-telefone">
-                <p>(99) 9999-9999</p>
-            </div>
-            <p class="consulta">Este telefone é especial para tratar de casos já em andamento</p>
+        <p class="p-siga-nos">Siga-nos:</p>
+        <div class="redes-sociais">
+          <a href="#"
+            ><img src="icones/icone-facebook.svg" alt="icone-facebook"
+          /></a>
+          <a href="https://twitter.com/Victorfreitas45" target="_blank"
+            ><img src="icones/icone-twitter.svg" alt="icone-twitter"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/victor-manoel-de-freitas-laurentino-ba81ab22a/"
+            target="_blank"
+            ><img src="icones/icone-linkedin.svg" alt="icone-linkedin"
+          /></a>
+          <a href="https://instagram.com/victor_freitas02" target="_blank"
+            ><img src="icones/icone-instagram.svg" alt="icone-instagram"
+          /></a>
         </div>
+      </div>
+      <div class="footer" id="outros-servicos">
+        <p>OUTROS SERVIÇOS</p>
+        <p>Propriedade intlectual</p>
+        <p>LGPD</p>
+        <p>Direito internacional</p>
+        <p>Processos</p>
+      </div>
+      <div class="footer" id="paginas">
+        <p>PÁGINAS</p>
+        <p>Termos e condições</p>
+        <p>Política de privacidade</p>
+        <p>Fale com um especialista</p>
+        <p>PAQ</p>
+      </div>
+      <div class="footer" id="consulta-gratis">
+        <p class="p-consulta-gratis">CONSULTA GRÁTIS</p>
+        <div class="numero-de-consulta">
+          <img src="icones/icone-telefone.svg" alt="icone-telefone" />
+          <p>(99) 9999-9999</p>
+        </div>
+        <p class="consulta">
+          Este telefone é especial para tratar de casos já em andamento
+        </p>
+      </div>
     </footer>
-    
+
     <script src="index.js"></script>
-    
+
     <!-- projeto insprado em um print que eu tirei de uma Publição do Hora de codar -->
-</body>
+  </body>
 </html>
